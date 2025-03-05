@@ -69,6 +69,7 @@ const Recipe = async ({ params }: { params: Promise<{ id: string }> }) => {
       </div>
     );
   } catch (error) {
+    console.log(error);
     return <ErrorModal />;
   }
 };

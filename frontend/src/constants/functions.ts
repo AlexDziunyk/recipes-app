@@ -38,7 +38,7 @@ export const formatParamsToRequest = ({
   return requestString;
 };
 
-export const getIngredients = (data: any) => {
+export const getIngredients = (data: {[key: string]: string | null}) => {
   const ingredientsArr: string[] = [];
 
   for (const key in data) {
