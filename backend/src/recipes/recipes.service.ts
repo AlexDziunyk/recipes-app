@@ -15,7 +15,6 @@ export class RecipesService {
         );
 
         const filteredRecipes = await response.json();
-
         return {
           msg: 'Filtered recipes',
           data: filteredRecipes,
@@ -34,7 +33,7 @@ export class RecipesService {
       };
     } catch (error) {
       console.error(error);
-      return { error: error };
+      return null;
     }
   }
 

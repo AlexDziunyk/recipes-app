@@ -1,0 +1,42 @@
+.recipe {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+
+  .recipe__general {
+    .recipe__header {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+    }
+    .recipe__info {
+      .name {
+        font-size: 20px;
+      }
+      .country {
+        font-weight: 700;
+        cursor: pointer;
+      }
+    }
+
+    ul {
+      li {
+        transition: 0.3s;
+        &:hover {
+          color: rgb(94, 57, 57);
+        }
+      }
+    }
+  }
+
+  .recipe__others {
+    .recipe__tab {
+      overflow-y: auto;
+      max-height: 85vh;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+  }
+}

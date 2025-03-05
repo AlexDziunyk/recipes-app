@@ -1,0 +1,8 @@
+.recipe-all {
+  padding: 10px;
+  .recipes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}

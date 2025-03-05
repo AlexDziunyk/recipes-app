@@ -1,0 +1,10 @@
+.recipe-item {
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: 0.3s;
+
+  &:hover {
+    background-color: rgb(206, 206, 206);
+  }
+}
